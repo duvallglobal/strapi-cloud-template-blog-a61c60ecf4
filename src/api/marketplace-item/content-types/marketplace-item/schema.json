@@ -18,8 +18,7 @@
     },
     "slug": {
       "type": "uid",
-      "targetField": "title",
-      "required": true
+      "targetField": "title"
     },
     "description": {
       "type": "text",
@@ -31,8 +30,7 @@
     "accessLevel": {
       "type": "enumeration",
       "enum": ["free", "subscriber", "premium"],
-      "default": "free",
-      "required": true
+      "default": "free"
     },
     "media": {
       "type": "media",
@@ -41,7 +39,7 @@
       "allowedTypes": ["images", "files", "videos"]
     },
     "price": {
-      "type": "decimal",
+      "type": "float",
       "default": 0
     },
     "downloadUrl": {
@@ -56,8 +54,7 @@
     "status": {
       "type": "enumeration",
       "enum": ["draft", "published", "archived"],
-      "default": "draft",
-      "required": true
+      "default": "draft"
     },
     "views": {
       "type": "integer",
