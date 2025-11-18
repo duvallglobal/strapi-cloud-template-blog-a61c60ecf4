@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "marketplace_items",
+  "info": {
+    "singularName": "marketplace-item",
+    "pluralName": "marketplace-items",
+    "displayName": "Marketplace Item",
+    "description": "Digital products for the marketplace"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "tags": {
+      "type": "json"
+    },
+    "accessLevel": {
+      "type": "enumeration",
+      "enum": ["free", "subscriber", "premium"],
+      "default": "free",
+      "required": true
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["images", "files", "videos"]
+    },
+    "price": {
+      "type": "decimal",
+      "default": 0
+    },
+    "downloadUrl": {
+      "type": "string"
+    },
+    "externalLink": {
+      "type": "string"
+    },
+    "fileType": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["draft", "published", "archived"],
+      "default": "draft",
+      "required": true
+    },
+    "views": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}
+
