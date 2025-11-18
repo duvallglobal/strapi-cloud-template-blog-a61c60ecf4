@@ -18,8 +18,7 @@
     },
     "slug": {
       "type": "uid",
-      "targetField": "title",
-      "required": true
+      "targetField": "title"
     },
     "description": {
       "type": "text",
@@ -34,8 +33,7 @@
     "accessLevel": {
       "type": "enumeration",
       "enum": ["free", "subscriber", "premium"],
-      "default": "free",
-      "required": true
+      "default": "free"
     },
     "media": {
       "type": "media",
@@ -53,8 +51,7 @@
     "status": {
       "type": "enumeration",
       "enum": ["draft", "published", "archived"],
-      "default": "draft",
-      "required": true
+      "default": "draft"
     },
     "views": {
       "type": "integer",
