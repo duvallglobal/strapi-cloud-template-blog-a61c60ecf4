@@ -18,16 +18,14 @@
     },
     "slug": {
       "type": "uid",
-      "targetField": "title",
-      "required": true
+      "targetField": "title"
     },
     "description": {
       "type": "text",
       "required": true
     },
     "content": {
-      "type": "richtext",
-      "required": true
+      "type": "text"
     },
     "tags": {
       "type": "json"
@@ -35,8 +33,7 @@
     "accessLevel": {
       "type": "enumeration",
       "enum": ["free", "subscriber", "premium"],
-      "default": "free",
-      "required": true
+      "default": "free"
     },
     "media": {
       "type": "media",
@@ -48,13 +45,12 @@
       "type": "string"
     },
     "publishedDate": {
-      "type": "date"
+      "type": "datetime"
     },
     "status": {
       "type": "enumeration",
       "enum": ["draft", "published", "archived"],
-      "default": "draft",
-      "required": true
+      "default": "draft"
     },
     "views": {
       "type": "integer",
